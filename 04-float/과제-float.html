@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제-float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+            height: 100px;
+            margin: 25px 0;
+            text-align: center;
+            overflow: hidden;
+        }
+        main {
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            width: 60%;
+            height: 80%;
+            overflow: hidden;
+            clear: both;
+        }
+        main span {
+            background-color: red;
+            display: inline-block;
+            width: 80px;
+            height: 20px;
+            text-align: center;
+            float: left;
+            /* position:absolute를 안주면 aside가 아래로 밀려남*/
+            position: absolute;
+            margin: 10px auto auto 0;
+            z-index: 9999;  
+        }
+        main aside span{
+            background-color: palegreen;
+        }
+        main > div {
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+            margin: 20px;
+            float: left;
+            width: 70%;
+            height: 600px;
+        }
+        main aside {
+            border: 1px solid #ccc;
+            margin: 20px;
+            text-align: center;
+            float: right;
+            width: 20%;
+            height: 600px;
+            background: #f2f2f2;
+            line-height: 600px;
+        }
+        main div section {
+            border: 1px solid #ccc;
+            background: #f2f2f2;
+            margin: 20px auto;
+            height: 28%;
+            width: 90%;
+        }
+        section div {
+            border: 1px solid #ccc;
+            width: 95%;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 60px; 
+            background-color: pink;
+        }
+        footer {
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+            height: 100px;
+            margin: 25px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>header</h1>
+        <span>실선 1px #ccc;/ 배경색 #f2f2f2;/ 높이 100px;/ 가운데 정렬;/ 밖 여백 위아래 10px 좌우 0;/</span>
+    </header>
+    <main>
+        <span style="color: white;">main</span>
+        <div>
+            <span style="color: white;">div</span>
+            <section>
+                <span style="color: white;">section</span>
+                <div>div (height:60px);</div>
+                <div>div</div>
+            </section>
+            <section>
+                <span style="color: white;">section</span>
+                <div>div</div>
+                <div>div</div>
+            </section>
+            <section>
+                <span style="color: white;">section</span>
+                <div>div</div>
+                <div>div</div>
+            </section>
+        </div>
+        <aside>
+            <span style="color: white;">aside</span>
+            <h2>aside</h2>
+        </aside>
+    </main>
+    <footer><h1>footer</h1></footer>
+</body>
+</html>

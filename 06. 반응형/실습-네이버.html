@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header,nav,h1,main,footer,section,aside,div,p,h6{
+            border:1px solid #ccc;
+            position: relative;
+            
+        }
+        span{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            background-color: blueviolet;
+            color: #fff;
+            text-align: center;
+            font-size: 12px;
+            width: 40px;
+            padding: 3px 0;
+        }
+        header,main,footer{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header{
+            padding: 30px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        header h1{
+            width: 20%;
+            height: 50px;
+            color: rgb(95, 211, 0);
+            float: left;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header div{
+            border:3px solid rgb(95, 211, 0);
+            height: 50px;
+            padding: 11px 0 5px 10px;
+            color: 666;
+            font-weight: bold;
+            float: right;
+            width: 70%;
+            text-align: center;
+        }
+
+        header nav{
+            clear: both;
+            height: 40px;
+            
+        }
+
+        main{
+            overflow: hidden;
+            min-height: 600px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        main div{
+            height: 150px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        main section{
+            width: 60%;
+            float: left;
+            padding:30px;
+        }
+
+        main section div{
+
+        }
+
+        main aside{
+            width: 35%;
+            float: right;
+            padding:30px;
+        }
+
+        footer{
+            padding: 30px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        footer div{
+            height: 80px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        footer h6{
+            width: 20%;
+            height: 60px;
+            float:left;
+            color: #ccc;
+            font-size: 40px;
+            text-align: center;
+        }
+        footer p{
+            width: 75%;
+            height:60px;
+            float:right;
+        }
+        
+    </style>
+</head>
+<body>
+    <header><span>header</span>
+        <h1><span>h1</span>NAVER</h1>
+        <div><span>div</span>search</div>
+        <nav><span>nav</span>nav</nav>
+    </header>
+    <main><span>main</span>
+        <section><span>section</span>
+            <div>section div 영역1</div>
+            <div>section div 영역2</div>
+            <div>section div 영역3</div>
+            <div>section div 영역4</div>
+            <div>section div 영역5</div>
+        </section>
+        <aside><span>aside</span>
+            <div>aside div 영역1</div>
+            <div>aside div 영역2</div>
+            <div>aside div 영역3</div>
+            <div>aside div 영역4</div>
+            <div>aside div 영역5</div>
+        </aside>
+    </main>
+    <footer><span>footer</span>
+        <div><span>div</span>공지사항</div>
+        <h6><span>h6</span>NAVER</h6>
+        <p><span>p</span>FNB</p>
+
+    </footer>
+</body>
+</html>

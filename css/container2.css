@@ -1,0 +1,116 @@
+main section {
+    background: rgba(238, 238, 238);
+}
+main section .section-top {
+    width:100%;
+    height: 500px;
+    border: 1px solid #c6c6c6;
+    padding: 10px;
+}
+section .main-wrap {
+    width:1180px;
+    height:480px;
+    border: 1px solid #c6c6c6;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(138,138,138);
+}
+section .main-wrap .tapmenu {
+    border: 1px solid #c6c6c6;
+    width:40%;
+    height: 460px;
+    background: rgba(238, 238, 238);
+    float: left;
+    padding: 10px;
+}
+section .main-wrap .tapmenu .tapmenu-left {
+    border: 1px solid #c6c6c6;
+    width: 34%;
+    height: 450px;
+    float: left;
+    background: rgba(138,138,138);
+    margin-right: 10px;
+}
+section .main-wrap .tapmenu .tapmenu-right {
+    border: 1px solid #c6c6c6;
+    width: 62%;
+    height: 450px;
+    float: left;
+    background: rgba(138,138,138);
+}
+section .main-wrap .notification {
+    border: 1px solid #c6c6c6;
+    width:54%;
+    height: 460px;
+    background: rgba(238, 238, 238);
+    float: right;
+    padding: 10px;
+}
+section .main-wrap .notification-left {
+    border: 1px solid #c6c6c6;
+    width: 48%;
+    height: 450px;
+    float: left;
+    background: rgba(138,138,138);
+    margin-right: 10px;
+}
+section .main-wrap .notification-right {
+    border: 1px solid #c6c6c6;
+    width: 49%;
+    height: 450px;
+    float: left;
+    background: rgba(138,138,138);
+}
+main section .section-bottom {
+    width:100%;
+    height: 500px;
+    border: 1px solid #c6c6c6;
+    padding: 10px;
+}
+main section .section-bottom .eventtitle{
+    width: 99%;
+    height: 130px;
+    border: 1px solid #c6c6c6;
+    float: left;
+    margin-bottom: 10px;
+    background: rgba(238, 238, 238);
+}
+main section .section-bottom .eventcontents{
+    width: 98%;
+    height: 310px;
+    border: 1px solid #c6c6c6;
+    float: left;
+    background: rgba(238, 238, 238);
+    padding:10px;
+}
+main section .section-bottom .eventcontents .event1{
+    width:24%;
+    height: 300px;
+    border: 1px solid #c6c6c6;
+    background: rgb(138,138,138);
+    float: left;
+    margin-right: 10px;
+}
+main section .section-bottom .eventcontents .event2{
+    width:24%;
+    height: 300px;
+    border: 1px solid #c6c6c6;
+    background: rgb(138,138,138);
+    float: left;
+    margin-right: 10px;
+}
+main section .section-bottom .eventcontents .event3{
+    width:24%;
+    height: 300px;
+    border: 1px solid #c6c6c6;
+    background: rgb(138,138,138);
+    float: left;
+    margin-right: 10px;
+}
+main section .section-bottom .eventcontents .event4{
+    width:24%;
+    height: 300px;
+    border: 1px solid #c6c6c6;
+    background: rgb(138,138,138);
+    float: left;
+}

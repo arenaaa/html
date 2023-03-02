@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제-레이아웃-서브</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #wrap {
+            width: 1300px;
+            margin:0 auto;
+        }
+        #header {
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .header-wrap {
+            position: relative;
+        }
+        .header-wrap h1 {
+            width: 400px;
+            height: 80px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px 0;
+            background-color: skyblue;
+            margin-bottom: 20px;
+        }
+        .mypage-box {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            border: 1px solid red;
+        }
+        .login-box {
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: 1px solid red;
+            text-align: right;
+        }
+        .mypage-box a {
+            display: inline-block;
+            width: 70px;
+            height: 30px;
+            margin-right: 20px;
+            background-color: skyblue;
+            text-align: center;
+        }
+        .login-box a {
+            float: right;
+            width: 70px;
+            height: 30px;
+            margin-top: 50px;
+            margin-left: 20px;
+            background-color: skyblue;
+            text-align: center;
+        }
+        #gnb {
+            clear: both;
+        }
+        #gnb nav{
+            padding: 20px 0;
+            text-align: center;
+            background-color: skyblue;
+        }
+        #gnb nav li {
+            display: inline-block;
+            width: 15%;
+            text-align: center;
+            border: 1px solid black;
+        }
+        #gnb nav li a {
+            display: block;
+            padding: 10px 0;
+        }
+        #container {
+            clear:both;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        #container .news-box{}
+        
+        #container .left-cont{
+            width: 45%;
+            height: 600px;
+            float: left;
+            margin-right: 10px;
+        }
+        #container .right-cont{
+            width: 45%;
+            height: 600px;
+            float: right;
+        }
+        #container .banner-box{
+            height: 200px;
+            margin-bottom: 20px;
+            background-color: skyblue;
+        }
+        #container .news-list{
+            width: 45%;
+            height: 380px;
+            float: left;
+            margin-right: 20px;
+            background-color: skyblue;
+        }
+        #container .cont-list{
+            width: 45%;
+            height: 380px;
+            float: right;
+            background-color: skyblue;
+        }
+        #container .photo-box {
+            height: 380px;
+            overflow: hidden;
+        }
+        #container .photo-list{
+            list-style: none;
+            overflow: hidden;
+        }
+        #container .photo-list li {
+            background-color: skyblue;
+            width: 48%;
+            height: 180px;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 18px;
+        }
+        #container .photo-list li:nth-child(2) {
+            float:right;
+            margin-right:0;
+        }
+        #container .photo-list li:nth-child(4) {
+            float:right;
+            margin-right:0;
+        }
+        #container .photo-list li:nth-child(3) {
+            margin-bottom:0;
+        }
+        #container .photo-list li:nth-child(4) {
+            margin-bottom: 0;
+        }
+        #footer {
+            margin-top: 20px;
+            clear: both;
+            background-color: skyblue;
+            width: 100%;
+            height: 70px;
+            padding: 10px 10px;
+        }
+
+        #footer h6 {
+            float: left;
+            width: 400px;
+            height: 40px;
+            background-color: silver;
+        }
+
+        #footer .fnb{
+            float: right;
+            width: 800px;
+            height: 40px;
+            background-color: silver;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header-wrap">
+                <div class="mypage-box">
+                    <a href="#"><span>a</span></a>
+                    <a href="#"><span>a</span></a>
+                </div>
+                <h1>h1</h1>
+                <div class="login-box">
+                    <a href="#"><span>a</span></a>
+                    <a href="#"><span>a</span></a>
+                </div>
+            </div>
+            <div id="gnb">
+                <nav>
+                    <ul>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                        <li><a href="#">메뉴</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <main id="container">
+            <section class="left-cont">
+                <div class="banner-box">
+                    <p class="hot">p.hot</p>
+                </div>
+                <div class="news-box">
+                    <div class="news-list">
+                        div.news-list
+                    </div>
+                    <div class="cont-list">
+                        div.cont-list
+                    </div>
+                </div>
+            </section> 
+            <!-- //left-cont -->
+
+            <section class="right-cont">
+                <div class="banner-box">
+                    <p class="hot">p.hot</p>
+                </div>
+                <div class="photo-box">
+                    <ul class="photo-list">
+                        <li>li</li>
+                        <li>li</li>
+                        <li>li</li>
+                        <li>li</li>
+                    </ul>
+                </div>
+            </section> 
+            <!-- //right-cont -->
+
+        </main>
+        <!-- //container -->
+
+        <footer id="footer">
+            <h6>h6</h6>
+            <div class="fnb">
+                <address>주소</address>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+</html>

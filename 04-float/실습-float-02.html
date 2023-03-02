@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header{
+            border: 3px solid #000;
+            padding: 20px 20px 30px 20px;
+            overflow: hidden;
+            background-color: orange;
+            margin-bottom: 20px;
+        }
+
+        /* 1200px 넘어가면 가로스크롤 생기기때문에 1200px 넘기지 말기*/
+        header h1{
+            border: 3px solid #000;
+            float:left;
+            width: 10%;
+            height: 80px;
+            background-color: whitesmoke;
+            
+        }
+
+        /* float:left 속성안주면 옆에 h1박스에 넘어감!! */
+        header nav{
+            border: 3px solid #000;
+            float:left;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 65%;
+            height: 80px;
+            background-color: whitesmoke;
+        }
+
+        header div {
+            border: 3px solid #000;
+            float: right;
+            width: 20%;
+            height: 80px;
+            background-color: whitesmoke;
+        }
+
+        main{
+            border: 3px solid #000;
+            clear:both;
+            background-color: green;
+            overflow: hidden;
+            padding: 10px 10px 40px 10px;
+        }
+
+        main section{
+            border: 3px solid #000;
+            float: left;
+            margin-right: 20px;
+            width: 20%;
+            padding: 20px;
+            background-color: yellow;
+            height: 500px;
+        }
+
+        main section h2 {
+            border: 3px solid #000;
+            padding: 20px;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+
+        main section ul li {
+            list-style: none;
+            border: 2.5px solid #000;
+            margin-bottom: 15px;
+            height: 60px;
+            padding: 10px;
+            background-color: white;
+        }
+        main div {
+            border: 3px solid #000;
+            float: left;
+            width: 50%;
+            height: 500px;
+            background-color: white;
+            font-size: 20px;
+        }
+
+        main aside{
+            border: 3px solid #000;
+            float: right;
+            width: 27%;
+            height: 500px;
+            background-color: yellow;
+        }
+
+        footer{
+            margin-top: 20px;
+            clear: both;
+            border: 3px solid #000;
+            width: 100%;
+            height: 150px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>h1</h1>
+        <nav>nav</nav>
+        <div>div</div>
+    </header>
+    <main>
+        <section>
+            <h2>h2</h2>
+            <ul>
+                <li>li</li>
+                <li>li</li>
+                <li>li</li>
+                <li>li</li>
+            </ul>
+        </section>
+        <div>div</div>
+        <aside>aside</aside>
+    </main>
+    <footer>footer
+    </footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>실습-레이아웃-서브</title>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    overflow: hidden;
+}
+#header h1 {
+    float: left;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    background-color: skyblue;
+    padding: 30px 0;
+    margin-bottom: 10px;
+    color: white;
+}
+#header .mypage {
+    float: right;
+    width: 300px;
+    height: 100px;
+}
+#header .mypage-link{
+    margin-bottom: 6px;
+}
+
+#header .mypage-link a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 32%;
+    border: 1px solid blue;
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+}
+
+#header .mypage-txt {
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid blue;
+    background-color: skyblue;
+    color: white;
+}
+#gnb {
+    clear: both;
+    margin-top: 10px;
+    background-color: skyblue;
+    padding: 10px;
+}
+#gnb .gnb-row{
+    text-align: center;
+}
+#gnb a {
+    padding: 10px 50px;
+    border: 1px solid blue;
+    height: 50px;
+    display: inline-block;
+}
+#gnb span {
+    padding: 0 30px;
+}
+#container {
+    margin-top: 30px;
+    height: 600px;
+}
+#snb{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+#snb .sub {
+    padding: 20px 10px;
+    background-color: skyblue;
+    height: 493px;
+}
+#snb h2 {
+    padding: 30px 0;
+    text-align: center;
+    background-color: skyblue;
+    margin-bottom: 15px;
+    color: white;
+}
+#snb ul.sub li {
+    padding: 0 0;
+    display: block;
+    margin: 10x 0;
+    
+}
+#snb ul.sub li a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+     border: 1px solid blue;  
+    text-decoration: none;
+}
+#content{
+    float: left;
+    height: 100%;
+    width: 53%;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+#content .summary{
+    margin-bottom: 15px;
+    height: 83px;
+    border: 1px solid red;
+    
+}
+#content h3 {
+    float: left;
+    width: 300px;
+    height: 83px;
+    padding: 28px 10px;
+    font-size: 27px;
+    background-color: skyblue;
+    color: white;
+}
+#content .lnb-wrap{
+    background-color: skyblue;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    float: right;
+    width: 220px;
+    height:40px;
+    margin-top: 25px;
+}
+#content .content{
+    clear:both;
+    height: 83%;
+    width: 870px;
+    background-color: skyblue;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 27px;
+}
+#aside{
+    float: right;
+    height: 100%;
+    width: 20%;
+    background-color: skyblue;
+}
+#footer {
+    height: 100px;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: skyblue;
+}
+#footer h6 {
+    float: left;
+    width: 120px;
+    height: 70px;
+    color: white;
+    padding: 23px 0;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid blue;
+}
+#footer .fnb{
+    border: 1px solid blue;
+    float: right;
+    width: 70%;
+    height: 70px;
+    font-size: 24px;
+    text-align: center;
+    padding: 13px 0;
+}
+</style>
+</head>
+<body>
+    <header id="header">
+        <h1>h1</h1>
+        <div class="mypage">
+            <div class="mypage-link">
+                <a href="#">홈</a>
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+            </div>
+            <div class="mypage-txt">안녕하세요 김우빈님</div>
+        </div>
+        <nav id="gnb">
+            <div class="gnb-row">
+                <a href="#"><span>메뉴</span></a>
+                <a href="#"><span>메뉴</span></a>
+                <a href="#"><span>메뉴</span></a>
+                <a href="#"><span>메뉴</span></a>
+                <a href="#"><span>메뉴</span></a>
+            </div>
+        </nav>
+    </header><!-- //header -->
+
+    <div id="container">
+        <div id="snb">
+            <h2>공지사항</h2>
+            <ul class="sub">
+                <li><a href="#">서브메뉴</a></li>
+                <li><a href="#">서브메뉴</a></li>
+                <li><a href="#">서브메뉴</a></li>
+                <li><a href="#">서브메뉴</a></li>
+                <li><a href="#">서브메뉴</a></li>
+            </ul>
+        </div>
+        <!-- //snb -->
+        <div id="content">
+            <div class="summary">
+                <h3>h3</h3>
+                <div class="lnb-wrap">
+                    <div class="lnb-top"></div>
+                    <div class="lnb-bottom">.lnb</div>
+                </div>
+            </div>
+            <!-- //summary -->
+            <div class="content">
+                콘텐츠
+            </div>
+            <!-- //content -->
+        </div>
+        <aside id="aside">
+            우측메뉴
+        </aside>
+        <!-- //aside -->
+    </div><!-- //container -->
+    <footer id="footer">
+        <h6>h6</h6>
+        <div class="fnb">
+            <address>주소</address>
+        </div>
+    </footer><!-- //footer -->
+</body>
+</html>
